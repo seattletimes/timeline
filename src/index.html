@@ -8,7 +8,48 @@
     <%= t.include("partials/_adHead.html") %>
   </head>
   <body>
+  <!-- STEPS -->
+  <section id="Steps" class="steps-section">
 
+    <h2 class="steps-header">
+      Responsive Semantic Timeline
+    </h2>
+
+    <div class="steps-timeline">
+
+      <div class="steps-one">
+        <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
+        <h3 class="steps-name">
+          Semanticz
+        </h3>
+        <p class="steps-description">
+          The timeline is created using negative margins and a top border.
+        </p>
+      </div>
+
+      <div class="steps-two">
+        <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
+        <h3 class="steps-name">
+          Relative
+        </h3>
+        <p class="steps-description">
+           All elements are positioned realtive to the parent. No absolute positioning.
+        </p>
+      </div>
+
+      <div class="steps-three">
+        <img class="steps-img" src="http://placehold.it/50/3498DB/FFFFFF" alt="" />
+        <h3 class="steps-name">
+          Contained
+        </h3>
+        <p class="steps-description">
+           The timeline does not extend past the first and last elements.
+        </p>
+      </div>
+
+    </div><!-- /.steps-timeline -->
+
+  </section>
     <script src="app.js"></script>
     <% if (json.project.production) { %>
     <%= !json.project.embedded ? t.include("partials/_adFoot.html") : "" %>
