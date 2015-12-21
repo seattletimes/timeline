@@ -11,7 +11,6 @@
   text-align: center;
 }
 .steps-timeline {
-  outline: 1px dashed;
   
   @media screen and (max-width: 480px) {
     border-left: 2px solid; 
@@ -35,7 +34,7 @@
 .steps-one,
 .steps-two,
 .steps-three {
-  outline: 1px dashedgrunt;
+  outline: 1px;
   
   @media screen and (max-width: 480px) {
     margin-left: -25px;
@@ -85,9 +84,12 @@
   }
 }
 
-.steps-name,
+.steps-name {
+  font-size: 19px;
+}
 .steps-description {
-  margin: 0;
+  font-size: 15px;
+  margin: 20px 0;
 }
 .steps-name {
   .section-header;
