@@ -1,0 +1,108 @@
+/***
+ * http://css-tricks.com/ordering-css3-properties/
+ * http://www.456bereastreet.com/archive/201311/cutting_down_on_vendor_prefixes/
+ ***/
+
+@import "seattletimes";
+
+body {
+  margin: 0;
+  padding: 0 20px;
+}
+
+#timeline {
+  list-style: none;
+  width: 100%;
+  height: 200px;
+  margin: 200px 0 0;
+  border-top: 6px solid @df-middle-gray;
+  display: table;
+  border-spacing: 30px 0;
+  li {
+    display: table-cell;
+    position: relative;
+    min-width: 100px;
+  }
+}
+.circle {
+  margin: 0 auto;
+  top: -14px;
+  left: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border: 6px solid @df-blue;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  background: white;
+}
+ul.date {
+  color: @df-middle-gray;
+  border: 1px solid red;
+  font-size: 12px;
+  font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
+  margin-top: -17px;
+  li {
+    transform: rotate(-45deg);
+  }
+}
+.content {
+  text-align: center;
+  position: relative;
+  border: 1px solid red;
+}
+.avatar {
+  width: 200px;
+  display: block;
+  border: 1px solid red;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.42105263;
+}
+.content:before {
+  content: '';
+  width: 50px;
+  height: 100px;
+  left: 50%;
+  margin-left: -2px;
+  position: absolute;
+  border: 1px solid red;
+}
+li.down {
+  .content:before {
+    border-left: 4px solid @df-middle-gray;
+    
+    
+  }
+  .avatar {
+    top: 100px;
+  }
+}
+li.up {
+  .content {
+    margin-top: -106px;
+    &:before {
+      border-left: 4px solid @df-middle-gray;
+    }
+  }
+  
+  .avatar {
+    margin-top: -45px;
+  }
+}
+.rectangle {
+  border: 1px solid @df-middle-gray;
+  border-radius: 30px;
+  height: 30px;
+  width: 200px;
+  top: -19px;
+  position: relative;
+  background: white;
+  line-height: 30px;
+  text-align: center;
+}
