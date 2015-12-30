@@ -1,0 +1,24 @@
+[
+  {
+    "date": 1990,
+    "event": "4/20/1990",
+    "description": "Here is some text. ",
+    "direction": "up"
+  },
+  {
+    "date": 1991,
+    "event": "5/1/1991",
+    "direction": "up"
+  },
+  {
+    "date": 1992,
+    "event": "5/3/1991",
+    "direction": "up"
+  },
+  {
+    "date": 1993,
+    "event": "6/6/1992",
+    "description": "Here is some text.",
+    "direction": "up"
+  }
+]

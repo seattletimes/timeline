@@ -8,8 +8,8 @@
     <%= t.include("partials/_adHead.html") %>
   </head>
   <body>
-    <ul id='timeline'>
-      <ul class="date">
+    <ul id="timeline">
+       <ul class="date">
         <li>2007</li>
         <li>2008</li>
         <li>2009</li>
@@ -21,39 +21,23 @@
         <li>2015</li>
         <li>2016</li>
       </ul>
-  <li class='event down'>
-    <div class='content'>
-      <div class="avatar">Something happened here</div>
+
+
+ <% json.timeline_testing.forEach(function(row) { %>
+
+  <li class="date <%= row.direction %>">
+    <div class="content">
+      <div class="avatar"><strong><%= row.event %></strong>&nbsp; <% if (row.description) { %>
+      <%= row.description %>
+      <% } %>
+      </div>
     </div>
 
     <div class="dot">
       <span class='circle'></span>
     </div>
   </li>
-  <li class='event up'>
-    <div class='content'>
-      <div class="avatar">Something else happened here</div>
-    </div>
-    <div class="dot">
-      <span class='circle'></span>
-    </div>
-  </li>
-  <li class='event down'>
-    <div class='content'>
-      <div class="avatar">More things happened here. The more things.</div>
-    </div>
-    <div class="dot">
-      <span class='circle'></span>
-    </div>
-  </li>
-  <li class='event up'>
-    <div class='content'>
-      <div class="avatar">Even more things happened here.</div>
-    </div>
-    <div class="dot">
-      <span class='circle'></span>
-    </div>
-  </li>
+      <% }) %>
   <li class="last">
     <div class="rectangle">
       story continuing ...
