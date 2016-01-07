@@ -9,20 +9,7 @@
   </head>
   <body>
     <ul id="timeline">
-       <ul class="date">
-        <li>2007</li>
-        <li>2008</li>
-        <li>2009</li>
-        <li>2010</li>
-        <li>2011</li>
-        <li>2012</li>
-        <li>2013</li>
-        <li>2014</li>
-        <li>2015</li>
-        <li>2016</li>
-      </ul>
-
-
+      
  <% json.timeline_testing.forEach(function(row) { %>
 
   <li class="date <%= row.direction %>">
@@ -36,6 +23,7 @@
     <div class="dot">
       <span class='circle'></span>
     </div>
+    <div class="year"><%= row.year %></div>
   </li>
       <% }) %>
   <li class="last">

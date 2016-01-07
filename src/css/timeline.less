@@ -37,15 +37,14 @@ body {
   position: absolute;
   background: white;
 }
-ul.date {
+
+.year {
   color: @df-middle-gray;
   border: 1px solid red;
   font-size: 12px;
   font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
-  margin-top: -17px;
-  li {
-    transform: rotate(-45deg);
-  }
+  margin-top: 80px;
+  transform: rotate(-45deg);
 }
 .content {
   text-align: center;
@@ -73,6 +72,7 @@ ul.date {
   position: absolute;
   border: 1px solid red;
 }
+
 li.down {
   .content:before {
     border-left: 4px solid @df-middle-gray;
@@ -81,6 +81,7 @@ li.down {
     top: 100px;
   }
 }
+
 li.up {
   .content {
     margin-top: -106px;
