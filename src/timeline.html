@@ -9,29 +9,32 @@
   </head>
   <body>
     <ul id="timeline">
-      
- <% json.timeline_testing.forEach(function(row) { %>
+    
+      <% json.timeline_testing.forEach(function(row) { %>
 
-  <li class="date <%= row.direction %>">
-    <div class="content">
-      <div class="avatar"><strong><%= row.event %></strong>&nbsp; <% if (row.description) { %>
-      <%= row.description %>
-      <% } %>
-      </div>
-    </div>
+      <li class="date <%= row.direction %>">
+        <div class="content">
+          <div class="event"><strong><%= row.event %></strong>&nbsp; <% if (row.description) { %>
+          <%= row.description %>
+          <% } %>
+          </div>
+        </div>
 
-    <div class="dot">
-      <span class='circle'></span>
-    </div>
-    <div class="year"><%= row.year %></div>
-  </li>
+        <div class="dot">
+          <span class='circle'></span>
+        </div>
+        <div class="year"><%= row.year %></div>
+      </li>
+
       <% }) %>
-  <li class="last">
-    <div class="rectangle">
-      story continuing ...
-    </div>
-  </li>
-</ul>
+  
+      <li class="last">
+        <div class="rectangle">
+          story continuing ...
+        </div>
+      </li>
+    </ul>
+
     <script src="app.js"></script>
     <% if (json.project.production) { %>
     <%= !json.project.embedded ? t.include("partials/_adFoot.html") : "" %>
