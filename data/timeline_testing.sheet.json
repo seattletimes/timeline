@@ -1,24 +1,32 @@
 [
   {
     "year": 1990,
-    "event": "4/20/1990",
-    "description": "Here is some text. ",
+    "event": "1/1/1990",
+    "description": "Kale chips chillwave vegan, farm-to-table post-ironic asymmetrical before they sold out taxidermy banh mi next level pork belly polaroid.",
     "direction": "up"
   },
   {
     "year": 1991,
-    "event": "5/1/1991",
+    "event": "1/1/1991",
+    "description": "Cardigan listicle migas, portland affogato locavore wolf +1 YOLO bitters bespoke pop-up four dollar toast.",
     "direction": "up"
   },
   {
     "year": 1992,
-    "event": "5/3/1991",
+    "event": "1/1/1992",
+    "description": "Truffaut butcher pug everyday carry",
     "direction": "up"
   },
   {
     "year": 1993,
-    "event": "6/6/1992",
-    "description": "Here is some text.",
+    "event": "1/1/1993",
+    "description": "Brunch craft beer slow-carb polaroid leggings williamsburg. Raw denim chillwave austin, put a bird on it chartreuse kogi cornhole beard normcore you probably haven't heard of them master cleanse.",
+    "direction": "up"
+  },
+  {
+    "year": 1994,
+    "event": "1/1/1994",
+    "description": "Schlitz everyday carry authentic, distillery trust fund",
     "direction": "up"
   }
 ]
