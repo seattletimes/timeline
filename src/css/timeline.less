@@ -50,7 +50,7 @@ body {
 .content {
   text-align: center;
   position: relative;
-  border: 1px solid blue;
+
 }
 .event {
   width: 125px;
@@ -78,7 +78,7 @@ body {
 
 li.down {
   .content:before {
-    border-left: 4px solid @df-middle-gray;
+    border: 4px solid @df-middle-gray;
   }
   .event {
     top: 100px;
@@ -90,6 +90,7 @@ li.up {
     margin-top: -106px;
     &:before {
       border-left: 2px solid @df-middle-gray;
+      border-top: 2px solid @df-middle-gray;
     }
   }
   
