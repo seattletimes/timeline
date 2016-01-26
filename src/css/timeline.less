@@ -14,7 +14,7 @@ body {
   list-style: none;
   width: 100%;
   height: 300px;
-  margin: 200px 0 0;
+  margin: 300px 0 0;
   border-top: 2px solid @df-middle-gray;
   display: table;
   border-spacing: 30px 0;
@@ -41,13 +41,9 @@ body {
   color: @df-middle-gray;
   font-size: 12px;
   font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
-  margin: 90px 0px 0px 20px;
+  margin: 115px 0px 0px 32px;
   transform: rotate(-45deg);
-
-}
-.content {
-  text-align: center;
-  position: relative;
+  position: absolute;
 
 }
 .event {
@@ -63,25 +59,23 @@ body {
   background: white;
   padding: 0 3px;
 }
+.content {
+  text-align: center;
+  position: relative;
+
+}
 .content:before {
   content: '';
   width: 50px;
-  height: 100px;
+  height: 106px;
   left: 50%;
   margin-left: -2px;
   position: absolute;
 }
 
-li.down {
-  .content:before {
-    border: 4px solid @df-middle-gray;
-  }
-  .event {
-    top: 100px;
-  }
-}
 
 li.up {
+  background: none;
   .content {
     margin-top: -106px;
     &:before {
@@ -94,6 +88,16 @@ li.up {
     margin-top: -10px;
   }
 }
+
+li.down {
+  .content:before {
+    border: 4px solid @df-middle-gray;
+  }
+  .event {
+    top: 100px;
+  }
+}
+
 .rectangle {
   border: 1px solid @df-middle-gray;
   border-radius: 30px;
