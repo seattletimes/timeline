@@ -51,6 +51,9 @@ body {
   border-left: 2px solid @df-middle-gray;
   bottom: 0;
   min-height: 271px;
+  &:before {
+    border-top: 2px solid @df-middle-gray;
+  }
 
 }
 .circle {
@@ -73,25 +76,6 @@ body {
   margin: 10px 0px 0px 22px;
   transform: rotate(-45deg);
   position: absolute;
-
-}
-
-
-li.up {
-  background: none;
-  .event {
-    
-    &:before {
-      border-top: 2px solid @df-middle-gray;
-    }
-  }
-  
-}
-
-li.down {
-  .content:before {
-    border: 4px solid @df-middle-gray;
-  }
 }
 
 .rectangle {
