@@ -13,7 +13,6 @@ body {
 #timeline {
   list-style: none;
   width: 100%;
-  height: 300px;
   margin: 300px 0 0;
   border-top: 2px solid @df-middle-gray;
   display: table;
@@ -31,12 +30,6 @@ body {
   position: relative;
 }
 
-.event:before {
-  content: '';
-  width: 9px;
-  left: 0;
-  position: absolute;
-}
 .event {
   width: 125px;
   display: block;
@@ -53,8 +46,11 @@ body {
   min-height: 271px;
   &:before {
     border-top: 2px solid @df-middle-gray;
+    content: '';
+    width: 9px;
+    left: 0;
+    position: absolute;
   }
-
 }
 .circle {
   margin: 0 auto;
