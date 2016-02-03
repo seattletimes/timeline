@@ -12,17 +12,14 @@
     
       <% json.timeline_testing.forEach(function(row) { %>
 
-      <li class="event <%= row.direction %>">
+      <li class="event">
         <div class="content">
           <div class="event"><strong><%= row.event %></strong>&nbsp; <% if (row.description) { %>
           <%= row.description %>
           <% } %>
           </div>
         </div>
-
-        <div class="dot">
-          <span class='circle'></span>
-        </div>
+        <span class="circle"></span>
         <div class="year"><%= row.year %></div>
       </li>
 
