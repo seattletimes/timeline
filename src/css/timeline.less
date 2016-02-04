@@ -11,18 +11,18 @@ body {
 }
 
 #timeline {
-  list-style: none;
   width: 100%;
   margin: 300px 0 0;
   border-top: 2px solid @df-middle-gray;
-  display: table;
+  display: flex;
   border-spacing: 30px 0;
   position: absolute;  
+  
+  justify-content: space-around;
 }
 
-.container {
-  display: table-cell;
-  position: relative;
+li {
+  list-style: none;
   min-width: 20px;  
 }
 
@@ -54,9 +54,6 @@ body {
 }
 
 .circle {
-  top: -6.5px;
-  left: 47px;
-  right: 9;
   width: 9px;
   height: 9px;
   background: @df-middle-gray;
@@ -71,7 +68,7 @@ body {
   font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
   margin: 10px 0px 0px 22px;
   transform: rotate(-45deg);
-  position: absolute;
+  position: relative;
 }
 
 .rectangle {

@@ -12,7 +12,7 @@
     
       <% json.timeline_testing.forEach(function(row) { %>
 
-      <div class="container">
+      <li class="container">
         <div class="content">
           <div class="event"><strong><%= row.event %></strong>&nbsp; <% if (row.description) { %>
           <%= row.description %>
@@ -30,7 +30,7 @@
           story continuing ...
         </div>
       </li>
-    </ul>
+    </div>
 
     <script src="app.js"></script>
     <% if (json.project.production) { %>
